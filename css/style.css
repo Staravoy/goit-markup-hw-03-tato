@@ -1,0 +1,259 @@
+/* Загальні налуштування для всієї сторінки */
+:root {
+  --text-color: #212121;
+  --hover-color: #2196f3;
+  --second-color: #757575;
+  --background-color: #2f303a;
+  --wait: #ffffff;
+  --buttom-color: #f5f4fa;
+}
+
+ul {
+  padding: 0;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Roboto;
+  color: var(--text-color);
+}
+
+/* header */
+
+.logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.header-logo-decor {
+  color: var(--hover-color);
+}
+
+.logo:hover,
+:focus {
+  color: var(--hover-color);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+:focus {
+  color: var(--hover-color);
+}
+
+.nav-link-active {
+  color: var(--hover-color);
+}
+
+.contacts-contact {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--second-color);
+  letter-spacing: 0.02em;
+}
+
+.contacts-contact:hover {
+  color: var(--hover-color);
+}
+
+.contacts-contact:focus {
+  color: var(--hover-color);
+}
+
+/* section baner */
+.baner-title {
+  color: var(--wait);
+  background-color: var(--background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.baner {
+  background-color: var(--background-color);
+}
+
+.baner-button {
+  font-family: roboto;
+  background-color: var(--hover-color);
+  color: var(--wait);
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.baner-button:hover,
+:focus {
+  color: var(--second-color);
+}
+
+/* section skills */
+
+/* ЗГОДОМ ТРЕБА ЗАМІНИТИ!!!! */
+.none {
+  display: none;
+}
+
+.skills-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-color-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.skills-text {
+  margin-top: 0px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+
+/* section what-we-do */
+.what-we-do-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+/* section we */
+.we-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.we-img {
+  margin-bottom: 30px;
+}
+
+.we-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.we-proffesion {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+
+/* footer для всіх сторінок*/
+footer {
+  background-color: var(--background-color);
+}
+.footer-logo {
+  color: var(--wait);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.footer-logo-decor {
+  color: var(--hover-color);
+}
+
+.address-post {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--wait);
+}
+
+.address-email,
+.address-tel {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+
+.address-email:hover,
+.address-tel:hover,
+.address-post:hover {
+  color: var(--hover-color);
+}
+
+.address-email:focus,
+.address-tel:focus,
+.address-post:focus {
+  color: var(--hover-color);
+}
+
+/* СТОРІНКА PORTFOLIO */
+
+/* section buttons */
+.buttons-button {
+  border: 0;
+  background-color: var(--buttom-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.buttons-button:hover,
+:focus {
+  background-color: var(--hover-color);
+  color: var(--wait);
+}
+
+/* section exemples*/
+.exemples-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+
+.exempel-type {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
