@@ -18,19 +18,42 @@ li {
 }
 
 body {
-  font-family: Roboto;
+  font-family: "Roboto";
   color: var(--text-color);
+}
+
+h1,
+h2,
+h2,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner {
+  max-width: 1200px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* header */
 
+.conteiner-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   text-decoration: none;
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   color: var(--text-color);
 }
 
@@ -43,22 +66,41 @@ body {
   color: var(--hover-color);
 }
 
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list-item + .nav-list-item {
+  margin-left: 50px;
+}
+
 .nav-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--text-color);
   letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 .nav-link:hover,
 :focus {
+  /* background-color: var(--hover-color); */
   color: var(--hover-color);
 }
 
 .nav-link-active {
   color: var(--hover-color);
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
 }
 
 .contacts-contact {
@@ -70,16 +112,27 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts-contact:hover {
-  color: var(--hover-color);
-}
-
-.contacts-contact:focus {
+.contacts-contact:hover,
+:focus {
   color: var(--hover-color);
 }
 
 /* section baner */
+
+.baner {
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.baner-conteiner {
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
 .baner-title {
+  margin-bottom: 30px;
+
   color: var(--wait);
   background-color: var(--background-color);
   font-weight: 900;
@@ -89,16 +142,14 @@ body {
   text-transform: uppercase;
 }
 
-.baner {
-  background-color: var(--background-color);
-}
-
 .baner-button {
+  width: 200px;
+  height: 50px;
+
   font-family: roboto;
   background-color: var(--hover-color);
   color: var(--wait);
-  width: 200px;
-  height: 50px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -114,6 +165,18 @@ body {
 /* ЗГОДОМ ТРЕБА ЗАМІНИТИ!!!! */
 .none {
   display: none;
+}
+
+.skills-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  justify-content: center;
+}
+
+.skills-item + .skills-item {
+  margin-left: 30px;
 }
 
 .skills-title {
@@ -136,7 +199,22 @@ body {
 }
 
 /* section what-we-do */
+.what-we-do {
+  padding-bottom: 94px;
+}
+
+.what-we-do-list {
+  display: flex;
+}
+
+.what-we-do-img + .what-we-do-img {
+  margin-left: 30px;
+}
+
 .what-we-do-title {
+  text-align: center;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -144,14 +222,28 @@ body {
 }
 
 /* section we */
+
 .we-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.we-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.we-list-item + .we-list-item {
+  margin-left: 30px;
 }
 
 .we-img {
+  width: 270px;
   margin-bottom: 30px;
 }
 
@@ -174,8 +266,9 @@ body {
 }
 
 /* footer для всіх сторінок*/
-footer {
+.footer {
   background-color: var(--background-color);
+  padding-bottom: 60px;
 }
 .footer-logo {
   color: var(--wait);
@@ -184,6 +277,9 @@ footer {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-logo-decor {
@@ -211,20 +307,18 @@ footer {
 }
 
 .address-email:hover,
+:focus,
 .address-tel:hover,
-.address-post:hover {
-  color: var(--hover-color);
-}
-
-.address-email:focus,
-.address-tel:focus,
-.address-post:focus {
+:focus,
+.address-post:hover,
+:focus {
   color: var(--hover-color);
 }
 
 /* СТОРІНКА PORTFOLIO */
 
 /* section buttons */
+
 .buttons-button {
   border: 0;
   background-color: var(--buttom-color);
@@ -242,6 +336,17 @@ footer {
   color: var(--wait);
 }
 
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-item + .button-item {
+  margin-left: 8px;
+}
+
 /* section exemples*/
 .exemples-title {
   font-weight: 700;
@@ -251,9 +356,24 @@ footer {
   color: var(--text-color);
 }
 
+.exemples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  list-style: none;
+  padding: 0;
+}
+
 .exempel-type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+.exemples-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
