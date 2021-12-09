@@ -32,16 +32,27 @@ a {
   padding: 0;
 }
 
-.conteiner {
+.container {
   max-width: 1200px;
-  padding: 5px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border: ;
+}
+
 /* header */
 
-.conteiner-nav {
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav {
   display: flex;
   align-items: center;
 }
@@ -61,9 +72,13 @@ a {
   color: var(--hover-color);
 }
 
-.logo:hover,
-:focus {
+.logo:hover {
   color: var(--hover-color);
+}
+
+.logo:focus {
+  color: var(--hover-color);
+  background-color: var(--wait);
 }
 
 .nav-list {
@@ -86,8 +101,8 @@ a {
 
 .nav-link:hover,
 :focus {
-  /* background-color: var(--hover-color); */
-  color: var(--hover-color);
+   color: var(--hover-color);
+    background-color: var(--wait);
 }
 
 .nav-link-active {
@@ -122,12 +137,12 @@ a {
 .baner {
   background-color: var(--background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.baner-conteiner {
+.baner-container {
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
 }
 
 .baner-title {
@@ -164,14 +179,18 @@ a {
 
 /* ЗГОДОМ ТРЕБА ЗАМІНИТИ!!!! */
 .none {
-  display: none;
+  display:position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .skills-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   justify-content: center;
 }
 
@@ -199,8 +218,10 @@ a {
 }
 
 /* section what-we-do */
+
+
 .what-we-do {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 
 .what-we-do-list {
@@ -222,6 +243,10 @@ a {
 }
 
 /* section we */
+
+.we {
+  background-color: var(--buttom-color);
+}
 
 .we-title {
   font-weight: 700;
@@ -268,22 +293,35 @@ a {
 /* footer для всіх сторінок*/
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer-logo {
+  text-decoration: none;
   color: var(--wait);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
-  margin-top: 60px;
-  margin-bottom: 20px;
 }
 
 .footer-logo-decor {
   color: var(--hover-color);
+}
+
+.footer-logo:hover {
+  color: var(--hover-color);
+  background-color: var(--second-color);
+}
+
+.footer-logo:focus {
+  color: var(--wait);
+  background-color: var(--second-color);
+}
+
+.footer-adress-list {
+  margin-top: 20px;
 }
 
 .address-post {
@@ -328,6 +366,9 @@ a {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  min-width: 73px;
+  padding: 6px;
 }
 
 .buttons-button:hover,
@@ -339,7 +380,6 @@ a {
 .buttons-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
